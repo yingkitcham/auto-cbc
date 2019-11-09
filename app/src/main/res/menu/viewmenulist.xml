@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item android:id="@+id/resetData"
+            android:title="@string/resetViews"
+            app:showAsAction="never"/>
+        <item android:id="@+id/about"
+            android:title="@string/about"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/capture"
+            android:title="@string/capture"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/add_exist"
+            android:title="@string/add_exist"
+            app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Sample"
+        android:inputType="textVisiblePassword"
+        android:layout_alignStart="@+id/sampleList"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="15dp"/>
+
+    <ListView
+        android:id="@+id/sampleList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="false"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="70dp" />
+
+    <TextView
+        android:id="@+id/folderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/sampleList"
+        android:layout_marginTop="10dp"
+        android:text="@string/sampleList"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

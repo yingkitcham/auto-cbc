@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Auto-CBC</string>
+    <string name="add_new">Add New Sample</string>
+    <string name="about">About</string>
+    <string name="resetData">Reset Data</string>
+    <string name="sampleList">Sample List</string>
+    <string name="capture">Capture</string>
+    <string name="add_exist">Add Image</string>
+    <string name="resetViews">Clear Views</string>
+    <string name="rename_sample">Rename Sample</string>
+    <string name="delete_sample">Delete Sample</string>
+    <string name="rbcCount">Red Blood Cell Count:</string>
+    <string name="wbcCount">White Blood Cell Count:</string>
+    <string name="pltCount">Platelet Count:</string>
+    <string name="timeElapsed">Time Elapsed:</string>
+    <string name="dateCreated">Date Created:</string>
+    <string name="dateAnalysed">Date Analysed:</string>
+    <string name="analyse">Analyse</string>
+    <string name="developed">Developed By:</string>
+    <string name="teamMember1">Cham Ying Kit</string>
+    <string name="teamMember2">Nicholas Tan Chun Sheng</string>
+    <string name="teamMember3">Jacqueline Ang Jie Yi</string>
+    <string name="teamMember4">Dr Mohd Razali Bin Md Tomari</string>
+    <string name="teamMember5">Dr Wan Nurshazwani Binti Wan Zakaria</string>
+    <string name="uthm">2017    FKEE, UTHM</string>
+</resources>
