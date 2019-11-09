@@ -44,11 +44,11 @@ public class viewAdapter extends ArrayAdapter<ViewList> {
         if (data.get_rbcCount()!=0){
             countRBC = String.valueOf(data.get_rbcCount());
             countWBC = String.valueOf(data.get_wbcCount());
-            //countPLT = String.valueOf(data.get_pltCount());
+            countPLT = String.valueOf(data.get_pltCount());
         } else {
             countRBC = "-";
             countWBC = "-";
-            //countPLT = "-";
+            countPLT = "-";
         }
 
         if (convertView == null){
@@ -67,7 +67,7 @@ public class viewAdapter extends ArrayAdapter<ViewList> {
         viewHolder.viewIdName.setText("Image Name: "+ data.get_viewName() + "     ID: "+ data.get_viewId());
         viewHolder.dateCreated.setText("Date Created: "+data.get_date_created());
         viewHolder.dateModified.setText("Date Analysed: "+newDate);
-        viewHolder.countResult.setText("Numbers of RBC/WBC: "+countRBC+" / "+countWBC);
+        viewHolder.countResult.setText("Numbers of RBC/WBC/PLT: "+countRBC+" / "+countWBC+" / "+countPLT);
 
         // Return the completed view to render on screen
         return convertView;

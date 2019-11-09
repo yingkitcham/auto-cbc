@@ -180,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
                         File deletefolder = new File(Environment.getExternalStorageDirectory()+
                                 File.separator + mainDir + File.separator + point_to_folder);
                         // delete folder
-                        deletefolder.delete();
+                        deleteRecursive(deletefolder);
                         db.deleteSample(point_to_folder);
                         //show record
                         showRecord();

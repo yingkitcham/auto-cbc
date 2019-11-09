@@ -11,7 +11,7 @@ public class ViewList {
     private String _sampleName;
     private int _rbcCount;
     private int _wbcCount;
-    //private int _pltCount;
+    private int _pltCount;
     private String _time_elapsed;
     private String _date_created;
     private String _date_analysed;
@@ -19,39 +19,39 @@ public class ViewList {
     public ViewList() {
     }
 
-    public ViewList(String _viewName, String _sampleName, int _rbcCount, int _wbcCount, String _time_elapsed, String _date_analysed) {
+    public ViewList(String _viewName, String _sampleName, int _rbcCount, int _wbcCount, int _pltCount, String _time_elapsed, String _date_analysed) {
         this._viewName = _viewName;
         this._sampleName = _sampleName;
         this._rbcCount = _rbcCount;
         this._wbcCount = _wbcCount;
-        //this._pltCount = _pltCount;
+        this._pltCount = _pltCount;
         this._time_elapsed = _time_elapsed;
         this._date_created = _date_analysed;
         this._date_analysed = _date_analysed;
     }
 
     public ViewList(int _viewId, String _viewName,
-                    int _rbcCount, int _wbcCount,
+                    int _rbcCount, int _wbcCount, int _pltCount,
                     String _time_elapsed,
                     String _date_created, String _date_analysed) {
         this._viewId = _viewId;
         this._viewName = _viewName;
         this._rbcCount = _rbcCount;
         this._wbcCount = _wbcCount;
-        //this._pltCount = _pltCount;
+        this._pltCount = _pltCount;
         this._time_elapsed = _time_elapsed;
         this._date_created = _date_created;
         this._date_analysed = _date_analysed;
     }
 
     public ViewList(int _viewId, String _viewName, String _sampleName,
-                    int _rbcCount, int _wbcCount, String _date_created, String _date_analysed) {
+                    int _rbcCount, int _wbcCount,  int _pltCount, String _date_created, String _date_analysed) {
         this._viewId = _viewId;
         this._viewName = _viewName;
         this._sampleName = _sampleName;
         this._rbcCount = _rbcCount;
         this._wbcCount = _wbcCount;
-        //this._pltCount = _pltCount;
+        this._pltCount = _pltCount;
         this._date_created = _date_created;
         this._date_analysed = _date_analysed;
     }
@@ -87,9 +87,9 @@ public class ViewList {
         return _wbcCount;
     }
 
-//    public int get_pltCount() {
-//        return _pltCount;
-//    }
+    public int get_pltCount() {
+        return _pltCount;
+    }
 
     public String get_date_created() {
         return _date_created;
@@ -119,9 +119,9 @@ public class ViewList {
         this._wbcCount = _wbcCount;
     }
 
-//    public void set_pltCount(int _pltCount) {
-//        this._pltCount = _pltCount;
-//    }
+    public void set_pltCount(int _pltCount) {
+        this._pltCount = _pltCount;
+    }
 
     public void set_date_created(String _date_created) {
         this._date_created = _date_created;

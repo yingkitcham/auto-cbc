@@ -254,6 +254,7 @@ public class ViewListActivity extends AppCompatActivity {
             case R.id.delete_img:
                 final String imgData = mViewsList.get(info.position).get_viewName();
                 final String point_to_img = imgData+".jpg";
+                final String point_to_img_r = imgData+"_R.jpg";
 //                Toast.makeText(ViewListActivity.this, "The blood sample folder " +
 //                                point_to_img ,
 //                        Toast.LENGTH_SHORT).show();
@@ -267,8 +268,12 @@ public class ViewListActivity extends AppCompatActivity {
                         // define folder delete name
                         File deletefolder = new File(Environment.getExternalStorageDirectory()+
                                 File.separator + mainDir + File.separator + fldr +File.separator + point_to_img);
+                        File deletefolder_r = new File(Environment.getExternalStorageDirectory()+
+                                File.separator + mainDir + File.separator + fldr +File.separator + point_to_img_r);
                         // delete folder
                         deletefolder.delete();
+                        if (deletefolder_r.exists())
+                        deletefolder_r.delete();
                         db.deleteView(imgData);
                         //show record
                         showView();

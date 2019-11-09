@@ -31,7 +31,7 @@ public class MyDBHandler extends SQLiteOpenHelper {
     private static final String VIEW_SAMPLE= "_view_sample";
     private static final String RBC_COUNT = "_rbc_count";
     private static final String WBC_COUNT = "_wbc_count";
-    //private static final String PLT_COUNT = "_plt_count";
+    private static final String PLT_COUNT = "_plt_count";
     private static final String TIME_ELAPSED = "_time_elapsed";
     String query;
     String query1;
@@ -54,7 +54,7 @@ public class MyDBHandler extends SQLiteOpenHelper {
                 VIEW_SAMPLE + " TEXT, " +
                 RBC_COUNT + " INTEGER, " +
                 WBC_COUNT + " INTEGER, " +
-                //PLT_COUNT + " INTEGER, " +
+                PLT_COUNT + " INTEGER, " +
                 TIME_ELAPSED +" TEXT, " +
                 KEY_DATE_CREATED + " TEXT, " +
                 KEY_DATE_MODIFIED + " TEXT" +
@@ -197,7 +197,7 @@ public class MyDBHandler extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(RBC_COUNT,viewList.get_rbcCount());
         values.put(WBC_COUNT,viewList.get_wbcCount());
-        //values.put(PLT_COUNT,viewList.get_pltCount());
+        values.put(PLT_COUNT,viewList.get_pltCount());
         values.put(TIME_ELAPSED,viewList.get_time_elapsed());
         values.put(KEY_DATE_MODIFIED,viewList.get_date_analysed());
         SQLiteDatabase db = getWritableDatabase();
@@ -235,16 +235,16 @@ public class MyDBHandler extends SQLiteOpenHelper {
                 if (cursor.getString(3)!=null) {
                     data.set_rbcCount(Integer.parseInt(cursor.getString(3)));
                     data.set_wbcCount(Integer.parseInt(cursor.getString(4)));
-                    data.set_time_elapsed(cursor.getString(5));
-                    //data.set_pltCount(Integer.parseInt(cursor.getString(5)));
+                    data.set_pltCount(Integer.parseInt(cursor.getString(5)));
+                    data.set_time_elapsed(cursor.getString(6));
                 } else {
                     data.set_rbcCount(0);
                     data.set_wbcCount(0);
                     data.set_time_elapsed("0.0");
                     //data.set_pltCount(0);
                 }
-                data.set_date_created(cursor.getString(6));
-                data.set_date_analysed(cursor.getString(7));
+                data.set_date_created(cursor.getString(7));
+                data.set_date_analysed(cursor.getString(8));
             } while (cursor.moveToNext());
         }
         return data;
@@ -269,16 +269,16 @@ public class MyDBHandler extends SQLiteOpenHelper {
                 if (cursor.getString(3)!=null) {
                     data.set_rbcCount(Integer.parseInt(cursor.getString(3)));
                     data.set_wbcCount(Integer.parseInt(cursor.getString(4)));
-                    data.set_time_elapsed(cursor.getString(5));
-                    //data.set_pltCount(Integer.parseInt(cursor.getString(5)));
+                    data.set_pltCount(Integer.parseInt(cursor.getString(5)));
+                    data.set_time_elapsed(cursor.getString(6));
                 } else {
                     data.set_rbcCount(0);
                     data.set_wbcCount(0);
                     data.set_time_elapsed("0.0");
                     //data.set_pltCount(0);
                 }
-                data.set_date_created(cursor.getString(6));
-                data.set_date_analysed(cursor.getString(7));
+                data.set_date_created(cursor.getString(7));
+                data.set_date_analysed(cursor.getString(8));
                 // Adding contact to list
                 dataList.add(data);
             } while (cursor.moveToNext());

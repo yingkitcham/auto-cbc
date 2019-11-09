@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\FinalYearProject\AutoCBC\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="347480c2bee72e9b1370e87ddf3ec6f4a02aeece">
+        <dex dex="D:\FinalYearProject\AutoCBC\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_94a829c104f7780ae0ce1d7bab28f99c81644adc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\FinalYearProject\AutoCBC\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\FinalYearProject\AutoCBC\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_acce8f86de6c4a6b21819406fe93899cefc0063d\classes.dex" />
+    </item>
+
+</items>
